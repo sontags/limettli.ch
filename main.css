@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=IBM+Plex+Sans:ital@0;1&display=swap');
+
+:root {
+    --main-color: rgb(84, 133, 84);
+    --text-color: #333;
+
+    --grid-gap: 60px;
+
+    --font-size-small: 22px;
+    --font-size-regular: 32px;
+
+    --font-family: 'Cardo', serif;
+    --font-family-heading: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-regular);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.grid {
+    display: grid;
+    grid-gap: var(--grid-gap);
+    margin-right: var(--grid-gap);
+    margin-top: var(--grid-gap);
+    margin-left: var(--grid-gap);
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --font-size-small: 18px;
+        --font-size-regular: 24px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 780px1fr;
+        grid-template-rows: 90px 30px min-content 90px;
+        grid-template-areas:
+            "left logo    right"
+            "left nav     right"
+            "left content right"
+            "left footer  right";
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1600px) {
+    .grid {
+        grid-template-columns: 1fr 300px 8fr 1fr;
+        grid-template-rows: 90px min-content 90px;
+        grid-template-areas:
+            "left logo    nav     right"
+            "left content content right"
+            "left footer  footer  right";
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .grid {
+        grid-template-columns: 1fr repeat(3, 300px) 1fr;
+        grid-template-rows: 60px min-content 120px;
+        grid-template-areas:
+            "left logo     nav     nav     right"
+            "left content content content right"
+            "left footer  footer  footer  right";
+    }
+}
+
+
+.logo {
+    width: 100%;
+    grid-area: logo;
+    position: relative;
+}
+
+.logo-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav {
+    grid-area: nav;
+    position: relative;
+}
+
+.nav-menu {
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: var(--font-size-small);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.nav-menu span {
+    margin-left: 10px;
+}
+
+.nav-menu span:hover {
+    color: var(--text-color);
+}
+
+.content {
+    grid-area: content;
+}
+
+.content div {
+    margin-bottom: var(--font-size-regular);
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.insta {
+    width: 20px;
+}
