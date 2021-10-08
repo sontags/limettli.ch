@@ -40,7 +40,7 @@ body {
     margin-left: var(--grid-gap);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     :root {
         --font-size-small: 18px;
         --font-size-regular: 24px;
@@ -57,7 +57,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1600px) {
+@media only screen and (min-width: 900px) and (max-width: 1600px) {
     .grid {
         grid-template-columns: 1fr 300px 8fr 1fr;
         grid-template-rows: 90px min-content 90px;
