@@ -13,6 +13,17 @@
     --font-family-heading: 'IBM Plex Sans', sans-serif;
 }
 
+html {
+    background-image:
+        linear-gradient(#efffe0, transparent),
+        linear-gradient(to top left, var(--main-color), transparent),
+        linear-gradient(to top right, #d1fc37, transparent);
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
     font-family: var(--font-family);
     font-size: var(--font-size-regular);
