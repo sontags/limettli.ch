@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=IBM+Plex+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:ital@0;1&family=IBM+Plex+Sans:ital@0;1&display=swap');
 
 :root {
     --main-color: rgb(84, 133, 84);
@@ -9,7 +9,7 @@
     --font-size-small: 22px;
     --font-size-regular: 32px;
 
-    --font-family: 'Cardo', serif;
+    --font-family: 'Arima Madurai', sans-serif;
     --font-family-heading: 'IBM Plex Sans', sans-serif;
     --font-family-footer: 'IBM Plex Sans', sans-serif;
 }
