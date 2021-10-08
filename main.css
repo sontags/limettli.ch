@@ -123,6 +123,15 @@ body {
     margin-bottom: var(--font-size-regular);
 }
 
+.portrait {
+    text-aling: center;
+}
+
+.portrait > img {
+    margin: auto;
+    display: block;
+}
+
 .footer {
     grid-area: footer;
 }
