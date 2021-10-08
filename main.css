@@ -11,6 +11,7 @@
 
     --font-family: 'Cardo', serif;
     --font-family-heading: 'IBM Plex Sans', sans-serif;
+    --font-family-footer: 'IBM Plex Sans', sans-serif;
 }
 
 html {
@@ -133,9 +134,13 @@ body {
 }
 
 .footer {
+    font-family: var(--font-family-footer);
+    font-size: var(--font-size-small);
     grid-area: footer;
 }
 
 .insta {
+    display: inline-block;
     width: 20px;
+    height: 20px;
 }
